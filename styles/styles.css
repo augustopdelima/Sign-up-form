@@ -3,6 +3,18 @@
     src: url('../assets/fonts/Norse-Bold.otf') format('opentype');
 }
 
+:root {
+    --logo-background-color: rgba(0, 0, 0, 0.5);
+    --light-primary-color: white;
+    --credits-text-color:rgba(255, 255, 255, 0.8);
+    --light-secondary-color:#eee;
+    --input-border-color:#E4E7EB;
+    --shadow-color:rgba(0, 0, 0, 0.6);
+    --dark-primary-color:rgb(41, 40, 40);
+    --green-primary-color:#596D48;
+    --invalid-color:red;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -31,7 +43,7 @@ body {
 
 .logo-background {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--logo-background-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +56,7 @@ body {
 }
 
 .logo-text {
-    color: white;
+    color: var(--light-primary-color);
     font-size: 7rem;
     font-family: 'Norse';
     margin: 0;
@@ -56,7 +68,7 @@ body {
 
 .credits,
 .link-credits {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--credits-text-color);
 }
 
 
@@ -71,7 +83,7 @@ body {
     flex: 1;
     height: 100%;
     gap: 20px;
-    background-color: #eee;
+    background-color: var(--light-secondary-color);
 }
 
 .emphasis {
@@ -97,13 +109,13 @@ body {
 }
 
 .form-content {
-    border: 1px solid #eee;
-    background-color: white;
+    border: 1px solid var(--light-secondary-color);
+    background-color: var(--light-primary-color);
     padding: 40px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 3px 1px var(--shadow-color);
 }
 
 .form-title {
@@ -125,30 +137,30 @@ body {
     width:300px;
     border-radius:4px;
     padding: 4px;
-    border: 1px solid #E5E7EB;
+    border: 1px solid var(--input-border-color);
 }
 
 .input:focus {
-    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 3px 1px var(--shadow-color);
 }
 
 .input-label{
     font-weight: 600;
-    color: rgb(41, 40, 40);
+    color: var(--dark-primary-color);
 }
 
 .input-password:invalid {
-    border: 1px solid red;
+    border: 1px solid var(--invalid-color);
 }
 
 .submit-button {
-    background-color: #596D48;
-    color:white;
+    background-color: var(--green-primary-color);
+    color:var(--light-primary-color);
     padding: 16px;
     max-width: 18rem;
-    border: 1px solid #596D48;
+    border: 1px solid var(--green-primary-color);
     border-radius: 10px;
-    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 3px 1px var(--shadow-color);
     font-size: 1.4rem;
     font-weight: 600;
     cursor: pointer;
@@ -171,7 +183,7 @@ a:hover {
 }
 
 .log-in-link {
-    color: #596D48;
+    color: var(--green-primary-color);
     text-decoration: none;
     font-weight: 600;
 }
