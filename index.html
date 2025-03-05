@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,87 @@
     <link rel="stylesheet" href="./styles/modern-normalize.css">
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
+
 <body>
-    hello
+
+    <aside class="side-image">
+        <div class="logo-background">
+            <img class="logo" src="./assets/odin-lined.png" />
+            <p class="logo-text">ODIN</p>
+        </div>
+        <div class="credits">
+            <p>Photo by <a class="link-credits" href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a
+                    class="link-credits"
+                    href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a>
+            </p>
+        </div>
+    </aside>
+
+    <main class="content">
+        <div class="outside-content">
+            <p class="description">This is not a real oline service! You know you need something like this in your
+                life to help you realize
+                your deepest dreams. Sign up <em class="emphasis">now</em> to get started.</p>
+            <p class="slogan">You <em class="emphasis">know</em> you want to.</p>
+        </div>
+
+        <form class="form-container" method="post" action="#">
+
+            <section class="form-content">
+
+                <h2 class="form-title">Let's do this!</h2>
+
+                <div class="form-controls">
+                    <div class="input-container">
+                        <label class="input-label" for="first-name">FIRST NAME</label>
+                        <input class="input" id="first-name" type="text" />
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-label" for="last-name">LAST NAME</label>
+                        <input class="input" id="last-name" type="text" />
+                    </div>
+
+                </div>
+
+                <div class="form-controls">
+                    <div class="input-container">
+                        <label class="input-label" for="email">EMAIL</label>
+                        <input class="input" id="email" type="email" />
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-label" for="phone-number">PHONE NUMBER</label>
+                        <input class="input" id="phone-number" type="tel" />
+                    </div>
+                </div>
+
+                <div class="form-controls">
+                    <div class="input-container">
+                        <label class="input-label" for="password">PASSWORD</label>
+                        <input class="input input-password" id="password" type="password" required>
+                    </div>
+
+                    <div class="input-container">
+                        <label class="input-label" for="confirm-password">CONFIRM PASSWORD</label>
+                        <input class="input input-password" id="confirm-password" type="password" required />
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="create-account-content">
+                <button class="submit-button" type="submit">Create Account</button>
+
+                <p class="log-in-text">Already have an account? <a class="log-in-link" href="#">Log in</a></p>
+            </div>
+
+        </form>
+
+    </main>
+
+
 </body>
+
 </html>
